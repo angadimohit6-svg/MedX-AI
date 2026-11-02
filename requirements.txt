@@ -1,0 +1,12 @@
+Flask
+numpy
+scipy
+scikit-learn
+Pillow
+python-dotenv
+psutil
+torch
+torchvision
+SQLAlchemy
+Flask-Migrate
+pytest

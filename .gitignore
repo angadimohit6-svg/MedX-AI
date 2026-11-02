@@ -1,0 +1,55 @@
+# Python environments and generated files
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Local databases, logs, and temporary files
+*.db
+*.sqlite
+*.sqlite3
+*.log
+*.tmp
+
+# Runtime uploads and results
+/uploads/*
+!/uploads/.gitkeep
+/results/*
+!/results/.gitkeep
+
+# Private datasets and medical images
+/dataset/*
+!/dataset/README.md
+!/dataset/.gitkeep
+/datasets/*
+!/datasets/README.md
+!/datasets/.gitkeep
+*.dcm
+*.nii
+*.nii.gz
+
+# Model weights and exported model artifacts
+*.pt
+*.pth
+*.onnx
+*.h5
+*.hdf5
+*.ckpt
+*.weights
+*.engine
+
+# OS metadata
+.DS_Store

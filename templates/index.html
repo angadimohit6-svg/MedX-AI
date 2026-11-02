@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0e12">
+  <title>MedX AI | Research Workstation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand-lockup"><div class="brand-mark">M<span>X</span></div><div><strong>MEDX AI</strong><small>RESEARCH WORKSTATION</small></div></div>
+      <div class="side-label">WORKSPACES</div>
+      <nav id="workspace-nav" aria-label="Workspaces"></nav>
+      <div class="sidebar-bottom"><div class="research-note"><span class="pulse-dot"></span><div><strong>RESEARCH PROTOTYPE</strong><small>NOT FOR CLINICAL DIAGNOSIS</small></div></div><button class="icon-button" id="collapse-sidebar" aria-label="Collapse sidebar">←</button></div>
+    </aside>
+    <main class="main-shell">
+      <header class="topbar">
+        <div class="crumbs"><span>MEDX AI</span><i>/</i><strong id="breadcrumb">OVERVIEW</strong></div>
+        <div class="topbar-actions"><label class="global-search"><span>⌕</span><input id="global-search" type="search" placeholder="Search experiments, results..." aria-label="Global search"><kbd>⌘ K</kbd></label><button class="icon-button notification-trigger" aria-label="Notifications">◌<b></b></button><div class="profile"><span class="avatar">RS</span><span><strong>RESEARCHER</strong><small>LOCAL SESSION</small></span></div></div>
+      </header>
+      <section class="system-strip"><div class="strip-item"><span class="status-dot online"></span><span>SYSTEM <strong>ONLINE</strong></span></div><div class="strip-item"><span class="status-dot warning"></span><span>MODEL <strong id="model-strip">NOT CONNECTED</strong></span></div><div class="strip-item"><span class="status-dot warning"></span><span>CUDA <strong id="cuda-strip">CHECKING</strong></span></div><div class="strip-spacer"></div><div class="strip-item mono" id="clock">--:--:-- UTC</div></section>
+      <div class="workspace" id="workspace"></div>
+    </main>
+  </div>
+  <div class="command-palette" id="command-palette" aria-hidden="true"><div class="palette-panel"><div class="palette-head"><span>COMMAND PALETTE</span><kbd>ESC</kbd></div><input id="command-input" placeholder="Type a command..." aria-label="Command palette"><div id="command-list"></div></div></div>
+  <div class="toast-stack" id="toast-stack"></div>
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
